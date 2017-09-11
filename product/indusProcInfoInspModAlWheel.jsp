@@ -198,6 +198,14 @@
 									<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="lineSpeed"><spring:message code="TODO.KEY" text="라인 속도"/><br><spring:message code="TODO.KEY" text="(m/min, rpm)"/></span></div></th>
 									<td class="wp-al"><input type="text" data-field="lineSpeed" name="" title="<spring:message code='TODO.KEY' text=''/>"></td>
 								</tr>
+								<tr>
+									<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="returnRate"><spring:message code="TODO.KEY" text="반품률(%)"/></span></div></th>
+									<td class="wp-al"><input type="text" data-field="returnRate" name="" title="<spring:message code='TODO.KEY' text=''/>"></td>
+									<td class="wp-al"></td>
+									<td class="wp-al"></td>
+									<td class="wp-al"></td>
+									<td class="wp-al"></td>
+								</tr>
 							</tbody>
 						</table>
 					</div>
@@ -352,6 +360,7 @@
             </div>
             <!-- //제품 정보 -->
             <!-- 공정 Coating 정보 -->
+						{{#ifEquals remark2 'LIQUID'}}
             <div class="wp-clearfix">
                 <strong class="wp-tit bold"><spring:message code="TODO.KEY" text="공정 Coating 정보"/></strong>
             </div>
@@ -394,8 +403,54 @@
                     </tbody>
                 </table>
             </div>
+						{{/ifEquals}}
+			{{#ifEquals remark2 'POWDER'}}
+            <div class="wp-clearfix">
+                <strong class="wp-tit bold"><spring:message code="TODO.KEY" text="공정 Coating 정보"/></strong>
+            </div>
+            <div class="wp-wrap-table-st10">
+                <table class="wp-table-st11">
+                    <caption><spring:message code="TODO.KEY" text="공정 Coating 정보"/></caption>
+                    <colgroup>
+						<col style="width:18%">
+						<col style="width:15%">
+						<col style="width:18%">
+						<col style="width:15%">
+						<col style="width:18%">
+						<col style="width:16%">
+					</colgroup>
+                    <tbody>
+                    <tr>
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00020}}"><spring:message code="TODO.KEY" text="전압(KV)"/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00020}}</td>
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00021}}"><spring:message code="TODO.KEY" text="토출량(Bar)"/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00021}}</td>
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00022}}"><spring:message code="TODO.KEY" text="건조로 설정"/><br><spring:message code="TODO.KEY" text="온도(℃)"/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00022}}</td>
+					</tr>
+					<tr>	
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00023}}"><spring:message code="TODO.KEY" text="건조로 통과"/><br><spring:message code="TODO.KEY" text="시간(min)"/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00023}}</td>
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00024}}"><spring:message code="TODO.KEY" text="Target Coating"/><br><spring:message code="TODO.KEY" text="Thickness(㎛)"/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00024}}</td>
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00025}}"><spring:message code="TODO.KEY" text="Pitch Time(sec)"/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00025}}</td>
+					</tr>
+					<tr>	
+						<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00026}}"><spring:message code="TODO.KEY" text="도장부스 No."/></span></div></th>
+						<td class="wp-al">{{detail.ALWHEEL_00026}}</td>
+						<td class="wp-al"></td>
+						<td class="wp-al"></td>
+						<td class="wp-al"></td>
+						<td class="wp-al"></td>
+					</tr>
+                    </tbody>
+                </table>
+            </div>
+			{{/ifEquals}}
             <!-- //공정 Coating 정보 -->
             <!-- 공정 희석 조건 -->
+			{{#ifEquals remark2 'LIQUID'}}
             <div class="wp-clearfix">
                 <strong class="wp-tit bold"><spring:message code="TODO.KEY" text="공정 희석 조건"/></strong>
             </div>
@@ -414,10 +469,10 @@
                     <tr>
                         <th scope="row"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00027}}"><spring:message code="TODO.KEY" text="희석제 종류"/></span></div></th>
                         <td class="wp-al">{{detail.ALWHEEL_00027}}</td>
-												<th scope="row"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00029}}"><spring:message code="TODO.KEY" text="희석 후 점도(sec)"/></span></div></th>
-                        <td class="wp-al">{{detail.ALWHEEL_00029}}</td>
-                        <th scope="row"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00028}}"><spring:message code="TODO.KEY" text="희석 비율(%)"/></span></div></th>
+						<th scope="row"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00028}}"><spring:message code="TODO.KEY" text="희석 비율(%)"/></span></div></th>
                         <td class="wp-al">{{detail.ALWHEEL_00028}}</td>
+						<th scope="row"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00029}}"><spring:message code="TODO.KEY" text="희석 후 점도(sec)"/></span></div></th>
+                        <td class="wp-al">{{detail.ALWHEEL_00029}}</td>
                     </tr>
                     <tr>
                         <th scope="row"><div class="wp-temphum wp-icon-area"><span class="{{css.ALWHEEL_00030}}"><spring:message code="TODO.KEY" text="점도 측정시 온도(℃)"/></span></div></th>
@@ -430,6 +485,7 @@
                     </tbody>
                 </table>
             </div>
+			{{/ifEquals}}
             <!-- //공정 희석 조건 -->
             <!-- 도료 Supplier 점유율 -->
             <div class="wp-clearfix">
@@ -567,6 +623,7 @@ var indusProcInfoInspModAlWheel = (function() {
 			intProcItemCodeMpperRate["input[data-field='yield']"] = "ALWHEEL_00041";// 가동률(%)
 			intProcItemCodeMpperRate["input[data-field='defectRate']"] = "ALWHEEL_00042";// 불량률(%)
 			intProcItemCodeMpperRate["input[data-field='lineSpeed']"] = "ALWHEEL_00043";// 라인 속도(m/min, rpm)
+			intProcItemCodeMpperRate["input[data-field='returnRate']"] = "ALWHEEL_00044";// 반품률(%)
 		},
 		setInfo: function(docNo, itemType){
 			// 제품 유형 셋팅
@@ -661,6 +718,7 @@ var indusProcInfoInspModAlWheel = (function() {
 			
 			percentFormat($rate.find('input[data-field="yield"]'),"가동률(%)");
 			percentFormat($rate.find('input[data-field="defectRate"]'),"불량률(%)");
+			percentFormat($rate.find('input[data-field="returnRate"]'),"반품률(%)");
 			
 		}
 	};
@@ -920,6 +978,7 @@ var indusProcInfoInspModAlWheel = (function() {
 						   ,procId: dtItem[0].procId
 						   ,storeTerm: dtItem[0].storeTerm
 						   ,procNm: dtProcId.name
+						   ,remark2: dtProcId.remark2
 						   ,temArray: dtItem
 						   ,detail: dataArray
 						   ,css: cssArray
@@ -1475,6 +1534,7 @@ var indusProcInfoInspModAlWheel = (function() {
 					dtProcIdList.push({
 						id: data.detail2[i].procId
 						,name: data.detail2[i].procIdNm
+						,remark2: data.detail2[i].remark2
 						,setFlag: ""
 					});
 					procIdTemp += "," + data.detail2[i].procId + ",";
@@ -1484,6 +1544,7 @@ var indusProcInfoInspModAlWheel = (function() {
 						dtProcIdList.push({
 							id: data.detail2[i].procId
 							,name: data.detail2[i].procIdNm
+							,remark2: data.detail2[i].remark2
 							,setFlag: ""
 						});
 					}

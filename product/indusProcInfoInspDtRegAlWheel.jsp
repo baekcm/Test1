@@ -115,6 +115,7 @@
 				<!-- 공정 Coating 정보 -->
 				<h2 class="wp-cont-title"><spring:message code="TODO.KEY" text="공정 Coating 정보"/></h2>
 				<div class="wp-table-st1 wp-issue-apply" id="js-indus-proc-info-insp-dt-reg-alwheel-coating-roll-info">
+				<div id="reg-alwheel-coating-roll-info-liquid" style="display: ;">
 					<table>
 						<caption><spring:message code="TODO.KEY" text="공정 Coating 정보"/></caption>
 						<colgroup>
@@ -127,37 +128,78 @@
 						</colgroup>
 						<tbody>
 							<tr>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="discharge" ><spring:message code="TODO.KEY" text="토출량(Bar)"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="discharge" name="" title=""></td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="ovenTemp" ><spring:message code="TODO.KEY" text="건조로 설정"/><br><spring:message code="TODO.KEY" text="온도(℃)"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="ovenTemp" name="" title=""></td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="settingTime" ><spring:message code="TODO.KEY" text="Setting Time"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="settingTime" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="dischargeLiquid" ><spring:message code="TODO.KEY" text="토출량(Bar)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="dischargeLiquid" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="ovenTempLiquid" ><spring:message code="TODO.KEY" text="건조로 설정"/><br><spring:message code="TODO.KEY" text="온도(℃)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="ovenTempLiquid" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="settingTimeLiquid" ><spring:message code="TODO.KEY" text="Setting Time"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="settingTimeLiquid" name="" title=""></td>
 							</tr>
 							<tr>	
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="bellRpm" ><spring:message code="TODO.KEY" text="Bell RPM"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="bellRpm" name="" title=""></td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="targetThickness" ><spring:message code="TODO.KEY" text="Target Coating"/><br><spring:message code="TODO.KEY" text="Thickness(㎛)"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="targetThickness" name="" title=""></td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="pitchSec" ><spring:message code="TODO.KEY" text="Pitch Time(sec)"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="pitchSec" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="bellRpmLiquid" ><spring:message code="TODO.KEY" text="Bell RPM"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="bellRpmLiquid" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="targetThicknessLiquid" ><spring:message code="TODO.KEY" text="Target Coating"/><br><spring:message code="TODO.KEY" text="Thickness(㎛)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="targetThicknessLiquid" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="pitchSecLiquid" ><spring:message code="TODO.KEY" text="Pitch Time(sec)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="pitchSecLiquid" name="" title=""></td>
 							</tr>
 							<tr>	
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="ovenTime" ><spring:message code="TODO.KEY" text="건조로 통과"/><br><spring:message code="TODO.KEY" text="시간(min)"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="ovenTime" name="" title=""></td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="patternWidth" ><spring:message code="TODO.KEY" text="셋팅룸 온도/습도"/></span></div></th>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="ovenTimeLiquid" ><spring:message code="TODO.KEY" text="건조로 통과"/><br><spring:message code="TODO.KEY" text="시간(min)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="ovenTimeLiquid" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="patternWidthLiquid" ><spring:message code="TODO.KEY" text="셋팅룸 온도/습도"/></span></div></th>
 								<td class="wp-al">
-									<input type="text" data-field="settingRoomTemp" name="" title="" class="wp-wd49p">
-									<input type="text" data-field="settingRoomHum" name="" title="" class="wp-wd49p">
+									<input type="text" data-field="settingRoomTempLiquid" name="" title="" class="wp-wd49p">
+									<input type="text" data-field="settingRoomHumLiquid" name="" title="" class="wp-wd49p">
 								</td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="paintingBoothNo" ><spring:message code="TODO.KEY" text="도장부스 No."/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="paintingBoothNo" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="paintingBoothNoLiquid" ><spring:message code="TODO.KEY" text="도장부스 No."/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="paintingBoothNoLiquid" name="" title=""></td>
 							</tr>
 						</tbody>
 					</table>
 				</div>
+				<div id="reg-alwheel-coating-roll-info-powder" style="display: ;">
+					<table>
+						<caption><spring:message code="TODO.KEY" text="공정 Coating 정보"/></caption>
+						<colgroup>
+							<col style="width:15%">
+							<col style="width:18%">
+							<col style="width:14%">
+							<col style="width:20%">
+							<col style="width:15%">
+							<col style="width:18%">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="kvPowder" ><spring:message code="TODO.KEY" text="전압(KV)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="kvPowder" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="dischargePowder" ><spring:message code="TODO.KEY" text="토출량(Bar)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="dischargePowder" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="ovenTempPowder" ><spring:message code="TODO.KEY" text="건조로 설정"/><br><spring:message code="TODO.KEY" text="온도(℃)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="ovenTempPowder" name="" title=""></td>
+							</tr>
+							<tr>	
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="ovenTimePowder" ><spring:message code="TODO.KEY" text="건조로 통과"/><br><spring:message code="TODO.KEY" text="시간(min)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="ovenTimePowder" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="targetThicknessPowder" ><spring:message code="TODO.KEY" text="Target Coating"/><br><spring:message code="TODO.KEY" text="Thickness(㎛)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="targetThicknessPowder" name="" title=""></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="pitchSecPowder" ><spring:message code="TODO.KEY" text="Pitch Time(sec)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="pitchSecPowder" name="" title=""></td>
+							</tr>
+							<tr>	
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="paintingBoothNoPowder" ><spring:message code="TODO.KEY" text="도장부스 No."/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="paintingBoothNoPowder" name="" title=""></td>
+								<td class="wp-al"></td>
+								<td class="wp-al"></td>
+								<td class="wp-al"></td>
+								<td class="wp-al"></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				</div>
 				<!-- //공정 Coating 정보 -->
 				<!-- 희석 조건 -->
+				<div id="reg-alwheel-diluent-info" style="display: ;">
 				<h2 class="wp-cont-title"><spring:message code="TODO.KEY" text="희석 조건"/></h2>
 				<div class="wp-table-st1 wp-issue-apply" id="js-indus-proc-info-insp-dt-reg-alwheel-diluent-info">
 					<table>
@@ -174,10 +216,10 @@
 							<tr>
 								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="diluent"><spring:message code="TODO.KEY" text="희석제 종류"/></span></div></th>
 								<td class="wp-al"><input type="text" data-field="diluent" name="" title="<spring:message code='TODO.KEY' text=''/>"></td>
-								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="diluentVisc"><spring:message code="TODO.KEY" text="희석후 점도(sec)"/></span></div></th>
-								<td class="wp-al"><input type="text" data-field="diluentVisc" name="" title="<spring:message code='TODO.KEY' text=''/>"></td>
 								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="diluentRate"><spring:message code="TODO.KEY" text="희석비율(%)"/></span></div></th>
 								<td class="wp-al"><input type="text" data-field="diluentRate" name="" title="<spring:message code='TODO.KEY' text=''/>"></td>
+								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="diluentVisc"><spring:message code="TODO.KEY" text="희석후 점도(sec)"/></span></div></th>
+								<td class="wp-al"><input type="text" data-field="diluentVisc" name="" title="<spring:message code='TODO.KEY' text=''/>"></td>
 							</tr>
 							<tr>
 								<th class="wp-ar"><div class="wp-temphum wp-icon-area"><span class="wp-icon" data-field="viscTemp"><spring:message code="TODO.KEY" text="점도 측정시 온도(℃)"/></span></div></th>
@@ -189,6 +231,7 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
 				</div>
 				<!-- //희석 조건 -->
 				<!-- 도료 Supplier 점유율 -->
@@ -296,6 +339,10 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 	var share = [];
 	// 적용 제품/LOT No.정보 data
 	var item = [];
+	// 적용 공정
+	var procType = [];
+	// 적용 공정 구분
+	var remark2 = "";
 	
 	//------------------------------------------------
 	// 초기화
@@ -335,6 +382,8 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 			procInfoDt = [];
 			share = [];
 			item = [];
+			procType = [];
+			remark2 = "";
 			
 			// 적용 공정 attr
 			$procType = $('#js-indus-proc-info-insp-dt-reg-alwheel-proc-type-info');
@@ -348,6 +397,13 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 			$diluent = $('#js-indus-proc-info-insp-dt-reg-alwheel-diluent-info');
 			// 도료 Supplier 점유율 attr
 			$maker = $('#js-indus-proc-info-insp-dt-reg-alwheel-maker-info');
+			
+			// 공정 Coating 정보 초기화
+			$('#reg-alwheel-coating-roll-info-powder').css({display: 'none'});
+			$('#reg-alwheel-coating-roll-info-liquid').css({display: 'none'});
+			// 희석 조건 초기화
+			$('#reg-alwheel-diluent-info').css({display: 'none'});
+			
 		},
 		procItemCodeMapper: function(){ // item code 에 대하여 object id 를 mapping
 			
@@ -360,16 +416,25 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 			intProcItemCodeMpperProd["input[data-field='prodStorageTerm']"] = "ALWHEEL_00009";	// ALWHEEL_00009	제품 저장 기간(개월)
 			
 			// 공정 Coating 정보 
-			intProcItemCodeMpperCoatingRoll["input[data-field='discharge']"] = "ALWHEEL_00010"; //ALWHEEL_00010	토출량(Bar)
-			intProcItemCodeMpperCoatingRoll["input[data-field='ovenTemp']"] = "ALWHEEL_00011"; //ALWHEEL_00011	건조로 설정 온도(℃)
-			intProcItemCodeMpperCoatingRoll["input[data-field='settingTime']"] = "ALWHEEL_00012"; //ALWHEEL_00012	Setting Time
-			intProcItemCodeMpperCoatingRoll["input[data-field='bellRpm']"] = "ALWHEEL_00013"; //ALWHEEL_00013	Bell RPM
-			intProcItemCodeMpperCoatingRoll["input[data-field='targetThickness']"] = "ALWHEEL_00014"; //ALWHEEL_00014	Target Coating Thickness(㎛)
-			intProcItemCodeMpperCoatingRoll["input[data-field='pitchSec']"] = "ALWHEEL_00015"; //ALWHEEL_00015	Pitch Time(sec)
-			intProcItemCodeMpperCoatingRoll["input[data-field='ovenTime']"] = "ALWHEEL_00016"; //ALWHEEL_00016	건조로 통과 시간(min)
-			intProcItemCodeMpperCoatingRoll["input[data-field='settingRoomTemp']"] = "ALWHEEL_00017"; //ALWHEEL_00017	셋팅룸 온도(℃)
-			intProcItemCodeMpperCoatingRoll["input[data-field='settingRoomHum']"] = "ALWHEEL_00018"; //ALWHEEL_00018	셋팅룸 습도(%)
-			intProcItemCodeMpperCoatingRoll["input[data-field='paintingBoothNo']"] = "ALWHEEL_00019"; //ALWHEEL_00019	도장 부스 No.
+			//LIQUID
+			intProcItemCodeMpperCoatingRoll["input[data-field='dischargeLiquid']"] = "ALWHEEL_00010"; //ALWHEEL_00010	토출량(Bar)
+			intProcItemCodeMpperCoatingRoll["input[data-field='ovenTempLiquid']"] = "ALWHEEL_00011"; //ALWHEEL_00011	건조로 설정 온도(℃)
+			intProcItemCodeMpperCoatingRoll["input[data-field='settingTimeLiquid']"] = "ALWHEEL_00012"; //ALWHEEL_00012	Setting Time
+			intProcItemCodeMpperCoatingRoll["input[data-field='bellRpmLiquid']"] = "ALWHEEL_00013"; //ALWHEEL_00013	Bell RPM
+			intProcItemCodeMpperCoatingRoll["input[data-field='targetThicknessLiquid']"] = "ALWHEEL_00014"; //ALWHEEL_00014	Target Coating Thickness(㎛)
+			intProcItemCodeMpperCoatingRoll["input[data-field='pitchSecLiquid']"] = "ALWHEEL_00015"; //ALWHEEL_00015	Pitch Time(sec)
+			intProcItemCodeMpperCoatingRoll["input[data-field='ovenTimeLiquid']"] = "ALWHEEL_00016"; //ALWHEEL_00016	건조로 통과 시간(min)
+			intProcItemCodeMpperCoatingRoll["input[data-field='settingRoomTempLiquid']"] = "ALWHEEL_00017"; //ALWHEEL_00017	셋팅룸 온도(℃)
+			intProcItemCodeMpperCoatingRoll["input[data-field='settingRoomHumLiquid']"] = "ALWHEEL_00018"; //ALWHEEL_00018	셋팅룸 습도(%)
+			intProcItemCodeMpperCoatingRoll["input[data-field='paintingBoothNoLiquid']"] = "ALWHEEL_00019"; //ALWHEEL_00019	도장 부스 No.
+			//POWDER
+			intProcItemCodeMpperCoatingRoll["input[data-field='kvPowder']"] = "ALWHEEL_00020"; //ALWHEEL_00020	도장 전압(KV)
+			intProcItemCodeMpperCoatingRoll["input[data-field='dischargePowder']"] = "ALWHEEL_00021"; //ALWHEEL_00021	토출량(Bar)
+			intProcItemCodeMpperCoatingRoll["input[data-field='ovenTempPowder']"] = "ALWHEEL_00022"; //ALWHEEL_00022	건조로 설정 온도(℃)
+			intProcItemCodeMpperCoatingRoll["input[data-field='ovenTimePowder']"] = "ALWHEEL_00023"; //ALWHEEL_00023	건조로 통과 시간(min)
+			intProcItemCodeMpperCoatingRoll["input[data-field='targetThicknessPowder']"] = "ALWHEEL_00024"; //ALWHEEL_00024	Target Coating Thickness(㎛)
+			intProcItemCodeMpperCoatingRoll["input[data-field='pitchSecPowder']"] = "ALWHEEL_00025"; //ALWHEEL_00025	Pitch Time(sec)
+			intProcItemCodeMpperCoatingRoll["input[data-field='paintingBoothNoPowder']"] = "ALWHEEL_00026"; //ALWHEEL_00026	도장 부스 No.
 			
 			// 희석 조건
 			intProcItemCodeMpperDiluent["input[data-field='diluent']"] = "ALWHEEL_00027";	// ALWHEEL_00027	희석제 종류
@@ -626,29 +691,41 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 				});
 			});
 			// 공정 Coating 정보 Decimal
-			$.each(intProcItemCodeMpperCoatingRoll, function(key, value){ 
-				var valueNm = "";
-				if(key.indexOf("select[") > -1){
-					valueNm = $coatingRoll.find(key).children("option:selected").text();
+			$.each(intProcItemCodeMpperCoatingRoll, function(key, value){
+				if((key.toUpperCase()).indexOf(remark2) > -1){
+					var valueNm = "";
+					if(key.indexOf("select[") > -1){
+						valueNm = $coatingRoll.find(key).children("option:selected").text();
+					}
+					procInfoDt.push({
+						procId: $procType.find('select[data-field="procType"]').val()
+						,procItemCode: value
+						,procItemCodeInputType: intProcItemCodeType[value][0]
+						,procItemValue: $coatingRoll.find(key).val() || ""
+						,procItemValueNm: valueNm || ""
+					});
+				}else{
+					procInfoDt.push({
+						procId: $procType.find('select[data-field="procType"]').val()
+						,procItemCode: value
+						,procItemCodeInputType: intProcItemCodeType[value][0]
+						,procItemValue: ""
+						,procItemValueNm: ""
+					});
 				}
-				procInfoDt.push({
-					procId: $procType.find('select[data-field="procType"]').val()
-					,procItemCode: value
-					,procItemCodeInputType: intProcItemCodeType[value][0]
-					,procItemValue: $coatingRoll.find(key).val() || ""
-					,procItemValueNm: valueNm || ""
-				});
 			});
 			// 희석 조건 정보 Decimal
-			$.each(intProcItemCodeMpperDiluent, function(key, value){ 
-				var result = $diluent.find(key).val() || "";
-				procInfoDt.push({
-					procId: $procType.find('select[data-field="procType"]').val()
-					,procItemCode: value
-					,procItemCodeInputType: intProcItemCodeType[value][0]
-					,procItemValue: result
-					,procItemValueNm: ""
-				});
+			$.each(intProcItemCodeMpperDiluent, function(key, value){
+				if(remark2 == "LIQUID"){
+					var result = $diluent.find(key).val() || "";
+					procInfoDt.push({
+						procId: $procType.find('select[data-field="procType"]').val()
+						,procItemCode: value
+						,procItemCodeInputType: intProcItemCodeType[value][0]
+						,procItemValue: result
+						,procItemValueNm: ""
+					});
+				}
 			});
 			
 			// 도료 Supplier 점유율
@@ -687,6 +764,24 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 					, confirmButtonText : '<spring:message code="TODO.KEY" text="확인"/>'
 				});
 				$procType.find('select[data-field="procType"]').val("");
+			}
+			
+			var pt = $(this).val();
+			for(var i=0; i<procType.length; i++){
+				if(procType[i].code == pt){
+					remark2 = procType[i].remark2;
+					if(remark2 == "POWDER"){
+						$('#reg-alwheel-coating-roll-info-powder').css({display: ''});
+						$('#reg-alwheel-coating-roll-info-liquid').css({display: 'none'});
+						$('#reg-alwheel-diluent-info').css({display: 'none'});
+					}
+					if(remark2 == "LIQUID"){
+						$('#reg-alwheel-coating-roll-info-powder').css({display: 'none'});
+						$('#reg-alwheel-coating-roll-info-liquid').css({display: ''});
+						$('#reg-alwheel-diluent-info').css({display: ''});
+					}
+					break;
+				}
 			}
 		},
 		init: function() {
@@ -752,6 +847,7 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 				data = {
 						id:	$procType.find('select[data-field="procType"]').val()
 						,name: $procType.find('select[data-field="procType"]').children("option:selected").text()
+						,remark2: remark2
 						,setFlag: $procType.find('input[data-field="setFlag"]').val()
 					};
 			}
@@ -774,6 +870,26 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 			
 			// 적용 공정
 			$procType.find('select[data-field="procType"]').val(procId.id);
+			
+			// 공정 Coating 정보, 희석 조건 출력 여부
+			var pt = procId.id;
+			for(var i=0; i<procType.length; i++){
+				if(procType[i].code == pt){
+					remark2 = procType[i].remark2;
+					if(remark2 == "POWDER"){
+						$('#reg-alwheel-coating-roll-info-powder').css({display: ''});
+						$('#reg-alwheel-coating-roll-info-liquid').css({display: 'none'});
+						$('#reg-alwheel-diluent-info').css({display: 'none'});
+					}
+					if(remark2 == "LIQUID"){
+						$('#reg-alwheel-coating-roll-info-powder').css({display: 'none'});
+						$('#reg-alwheel-coating-roll-info-liquid').css({display: ''});
+						$('#reg-alwheel-diluent-info').css({display: ''});
+					}
+					break;
+				}
+			}
+			
 			// 적용 제품/LOT No.정보
 			for(var i=0; i<item.length; i++){
 				var result = prodLotListTemplate({
@@ -896,6 +1012,7 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 					
 					var data = response.rs;
 					var comboCnt = 0;
+					procType = data;
 					$procType.find('select[data-field="procType"]').find('option').remove();
 					$procType.find('select[data-field="procType"]').append("<option value=''>선택</option>");
 					for(var i=0; i < data.length; i++) {
@@ -903,6 +1020,7 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 						comboCnt++;	
 					}
 					$procType.find('select[data-field="procType"]').attr("title", comboCnt+" <spring:message code='TODO.KEY' text='건'/>");
+					
 				} else {
 					fn_alertInfo('E', message);
 					console.log(response.error || '');
@@ -948,7 +1066,6 @@ var indusProcInfoInspDtRegAlWheel = (function() {
 				if (message === 'OK') {
 					
 					var data = response.rs;
-					
 					// 도료구분 
 					$prod.find('select[data-field="paintId"]').find('option').remove();
 					for(var i=0; i<data.paintList.length; i++) {
